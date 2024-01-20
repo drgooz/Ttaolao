@@ -33,3 +33,5 @@ youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+---- block you 4----------
+youtube.com##+js(trusted-set-cookie, SOCS, CAESEwgDEgk1MjE4NjcxMTIaAmVuIAEaBgiAl7ihBg, 1year, , reload, 1)
