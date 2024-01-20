@@ -23,3 +23,13 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse
 
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+
+---- block you 3----------
+
+||music.youtube.com^$csp=worker-src 'none'
+||www.youtube.com^$csp=worker-src 'none'
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.playerAds)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
