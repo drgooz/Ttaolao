@@ -1,21 +1,17 @@
 [Adblock Plus 2.0]
-! Checksum: UXCRs2LgzgJJ5ske+1VpuQ
-! Version: 20240119214001
-! Title: ABPVN List
-! Last modified: 19 Jan 2024 21:40:02 UTC+7
-! Diff-Path: patches/20240119214001.patch#abpvn_ublock
-! Diff-Expires: 60 minutes
-! Expires: 1 days (update frequency)
+
+! Title: BLOCK AD
+
 !
 ! ABPVN List filter
-! Copyright: ABPVN
-! Homepage: https://abpvn.com/
-! License: GPLv3 (https://github.com/abpvn/abpvn/blob/master/LICENSE)
-! Please report any unblocked ads or problems by email or in our fanpage
-! Mọi thắc mắc xin gửi về email hoặc fanpage
-! Email: support@abpvn.com
-! Facebook Fanpage: https://www.facebook.com/abpvn.org
-! Forum: https://voz.vn/t/official-abpvn-bo-loc-quang-cao-cho-nguoi-viet-bao-cao-quang-cao-giai-dap-thac-mac.867616/
-! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
+
+
 ! ---------- Generic Blocking Rules ----------
-.com/cpc/$script
+
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
